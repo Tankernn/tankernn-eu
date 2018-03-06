@@ -1,0 +1,175 @@
+/*
+Main CSS file for tankernn.eu
+Backgrund from http://www.facets.la/wallpapers/
+*/
+@font-face {
+  font-family: "Open Sans";
+  src:  url(https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Regular-webfont.eot?#iefix) format("embedded-opentype"),
+        url(https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Regular-webfont.woff) format("woff"),
+        url(https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Regular-webfont.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans";
+  src:  url(https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Bold-webfont.eot#iefix) format("embedded-opentype"),
+        url(https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Bold-webfont.woff) format("woff"),
+        url(https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Bold-webfont.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@keyframes goRight {
+  0% {left: -500px}
+  100% {left: 100%}
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  background-color: #00a4e1;
+  color: #777;
+  border-collapse: collapse;
+}
+
+body * {
+  transition: 0.5s;
+}
+
+main .container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.meta > div > div {
+  background: #FFF;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  padding: 0 20px 20px;
+  margin-bottom: 20px;
+}
+
+/*#### Header styling ####*/
+
+nav {
+  background-color: white;
+  border-bottom: 3px solid #337AB7;
+}
+
+.navbar-toggle .icon-bar {
+  background-color: darkgray;
+}
+
+.login {
+  float: right;
+  padding-top: 5px;
+  padding-right: 10px;
+}
+
+/*#### Menu ####*/
+
+nav ul li:hover a {
+  background-color: transparent !important;
+}
+
+nav ul li a {
+  z-index: 5;
+}
+
+#menuselector {
+  background-color: #337AB7;
+  position: absolute;
+  z-index: 4;
+  display: none;
+}
+
+/*#### Structural Styling ####*/
+
+h1, h2, h3, h4, h5, h6 {
+  color: black;
+}
+
+footer {
+  font-family: Arial, inherit;
+  font-size: 18px;
+  background-color: #393939;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+footer a, footer a:hover {
+  color: white;
+}
+
+footer ul li {
+  list-style: none;
+}
+
+/*#### Various Styling ###*/
+
+#snakeCanvas {
+  border: 1px solid black;
+}
+
+.coral {
+  animation: goRight linear 3s 1;
+  position: fixed;
+  left: -500px;
+}
+
+.error {
+  background-color: #D9534F;
+  color: white;
+}
+
+li.L0, li.L1, li.L2, li.L3,
+li.L5, li.L6, li.L7, li.L8
+{ list-style-type: decimal !important }
+
+.prettyprint {
+  background-color: #fdfdfd;
+  font-family: Courier;
+  padding: 2px;
+  border-radius: 5px;
+  white-space: pre-wrap;
+
+  -moz-tab-size:  4;
+  -o-tab-size:  4;
+  tab-size:  4;
+}
+
+.download-button {
+  font-size: 26px;
+  padding: 15px 100px;
+  font-weight: bold;
+  background-color: #0085B7;
+  color: white;
+  transition: 0.5s;
+
+  text-decoration: none;
+
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: inline-block;
+
+  border: 2px solid #0085B7;
+  border-radius: 10px;
+}
+
+.download-button:hover {
+  background-color: transparent;
+
+  text-decoration: none;
+  color: #0085B7;
+}
+
+@media screen and (min-width: 765px) {
+  .navbar-nav {
+  	float: right;
+  }
+  
+  #menuselector {
+  	display: block;
+  }
+}

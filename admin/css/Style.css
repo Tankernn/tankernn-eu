@@ -1,0 +1,68 @@
+body {
+    background-color: #0089ff;
+}
+
+/* #### Forms ##### */
+
+div.CodeMirror {
+  font-family: Arial;
+  border: 1px solid;
+}
+
+#preview {
+  border-left: 1px dotted gray;
+  background-color: #00a4e1;
+}
+
+#preview * {
+  max-width: 100%;
+}
+
+.input-group {
+  margin-bottom: 5px;
+}
+
+.alert {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* #### Lists ##### */
+
+table.list tbody tr td form {
+	display: inline;
+}
+
+/* #### Sortable permission list #### */
+
+div.sort {
+  display: inline;
+  margin-right: 10px;
+  float:left;
+  width: 45%;
+}
+
+div.sort ul {
+  height:200px;
+  width:100%;
+  padding: 0;
+}
+
+div.sort ul li {
+  list-style: none;
+  margin: 0;
+  padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+div#allow ul {
+  background-color: lightgreen;
+}
+
+div#forbid ul {
+  background-color: red;
+}
+
+.permlist {
+  overflow-y: scroll;
+}
