@@ -177,6 +177,7 @@
 	var editor = ace.edit("editor");
 	editor.setTheme("ace/theme/monokai");
 	editor.getSession().setMode("ace/mode/html");
+	editor.getSession().setUseWrapMode(true);
 	if (code.prop('name') === "css") {
 		editor.getSession().setMode("ace/mode/css");
 	}
